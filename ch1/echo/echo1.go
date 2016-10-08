@@ -1,4 +1,4 @@
-// echo1 Print commandline arguments using for loop.
+// echo1.go Print commandline arguments using for loop.
 
 package main
 
