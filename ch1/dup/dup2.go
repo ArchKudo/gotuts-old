@@ -1,3 +1,5 @@
+// dup2.go Prints duplicate strings and their count with input from files.
+
 package main
 
 import (

@@ -1,4 +1,4 @@
-// dup1.go Prints duplicate string and their count.
+// dup1.go Prints duplicate strings and their count.
 
 package main
 
