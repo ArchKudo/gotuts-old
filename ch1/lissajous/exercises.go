@@ -1,4 +1,4 @@
-// exercises.go Solution exercise 1.5
+// exercises.go Covers exercises 1.5, 1.6
 
 package main
 
@@ -12,12 +12,12 @@ import (
 	"os"
 )
 
-var palette = []color.Color{color.Black, color.RGBA{0x00, 0xff, 0x00, 0xff}}
+var palette = []color.Color{color.Black, color.RGBA{0xff, 0x00, 0x00, 0xff}, color.RGBA{0x00, 0xff, 0x00, 0xff}, color.RGBA{0x00, 0x00, 0xff, 0xff}}
 
-const (
-	blackIndex = 0
-	greenIndex = 1
-)
+// const (
+// 	blackIndex = 0
+// 	greenIndex = 1
+// )
 
 func main() {
 	lissajous(os.Stdout)
@@ -26,7 +26,7 @@ func main() {
 func lissajous(out io.Writer) {
 	const (
 		cycles  = 5
-		res     = 0.0001
+		res     = 0.001
 		size    = 100
 		nframes = 64
 		delay   = 8
@@ -42,7 +42,7 @@ func lissajous(out io.Writer) {
 		for t := 0.0; t < cycles*2*math.Pi; t += res {
 			x := math.Sin(t)
 			y := math.Sin(t*freq + phase)
-			img.SetColorIndex(size+int(x*size+0.5), size+int(y*size+0.5), greenIndex)
+			img.SetColorIndex(size+int(x*size+0.5), size+int(y*size+0.5), uint8(rand.Intn(len(palette))))
 		}
 		phase += 0.1
 		anim.Image = append(anim.Image, img)
