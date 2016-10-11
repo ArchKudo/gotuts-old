@@ -1,4 +1,4 @@
-// fetchall.go Fetch websites concurrently
+// fetchall.go Fetch websites concurrently.
 
 package main
 

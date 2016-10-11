@@ -1,4 +1,4 @@
-// fetch.go Fetches source of URL
+// fetch.go Fetches source of URL.
 
 package main
 
