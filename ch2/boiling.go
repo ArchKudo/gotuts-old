@@ -1,0 +1,13 @@
+// boiling.go Print the boiling temperature of water.
+
+package main
+
+import "fmt"
+
+const boilingF = 212.0
+
+func main() {
+	var f = boilingF
+	var c = (f - 32) * 5 / 9
+	fmt.Printf("The boiling temperature of water is %g°F or %g°C\n", f, c)
+}
