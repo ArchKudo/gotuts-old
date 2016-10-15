@@ -1,4 +1,4 @@
-// tempconv.go Convert between temperature scales
+// tempconv.go Convert between temperature scales.
 
 package tempconv
 

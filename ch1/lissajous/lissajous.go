@@ -1,4 +1,4 @@
-// lissajous.go Create lissajous pattern
+// lissajous.go Create lissajous pattern.
 
 package main
 

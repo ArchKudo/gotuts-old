@@ -1,4 +1,4 @@
-//
+// cf.go Converts cmdline args into Fahrenheit and Celsius equivalents.
 
 package main
 

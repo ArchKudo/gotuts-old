@@ -1,4 +1,4 @@
-// echo.go Print cmdline args with flags
+// echo.go Print cmdline args with flags.
 
 package echo
 
