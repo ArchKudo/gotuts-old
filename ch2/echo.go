@@ -1,6 +1,6 @@
 // echo.go Print cmdline args with flags.
 
-package echo
+package main
 
 import (
 	"flag"
