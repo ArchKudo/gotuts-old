@@ -1,4 +1,4 @@
-// echo2.go Print commandline arguments using range.
+// 1.2 echo2.go Print commandline arguments using range.
 
 package main
 
